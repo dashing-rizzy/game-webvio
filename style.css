@@ -5,7 +5,7 @@
   color: white !important;
 }
 body {
-  background: url(/Backgrounds/Background-Wallpaper.png) no-repeat center center
+  background: url(Backgrounds/Background-Wallpaper.png) no-repeat center center
     fixed;
   background-size: cover;
 }
