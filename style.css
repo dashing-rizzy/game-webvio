@@ -1,151 +1,100 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: Merriweather;
+  padding: 0;
+  margin: 0;
+  font-family: Merriweather;
+  color: white !important;
 }
-
-#toggleMode {
-    padding: 10px 20px;
-    position: relative;
-    bottom: -100px;
-    left: 735px;
-    border-radius: 10px;
+body {
+  background: url(/Backgrounds/Background-Wallpaper.png) no-repeat center center
+    fixed;
+  background-size: cover;
 }
-#head {
-    text-align: center;
-    font-family: Merriweather;
-    font-weight: bold;
-    height: 4rem;
-    background-color: #00A6ED ;
-    color: white;
-    margin: auto;
-    padding-top: 16px ;
-    font-size: 45px;    
+.navbar {
+  font-weight: bolder !important;
+  background-color: rgba(255, 255, 255, 0.505);
+}
+.navbar a,
+span {
+  color: black !important;
+}
+marquee {
+  background-color: black !important;
+  color: white !important;
 }
 
 .button-handler {
-    display: flex;
-    justify-content: center;
-    width: 600px;
-    position: relative;
-    top: 90px;
-    left: 30%;
-    justify-content: space-between;
-    gap: inherit;
-    
+  margin: 5% 10% 0 20%;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .game-buttons {
-    display: flex;
-    border-radius: 50%;
+  display: flex;
+  flex-direction: row;
 }
 
 img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
-#rock, #paper, #scissors {
-    border-radius: 50%;
-    display: flex;
-    
-
+#rock,
+#paper,
+#scissors {
+  display: flex;
+  flex-direction: row;
 }
 
 #rock :hover {
-    opacity: 0.5;
-} 
-
-#paper :hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
+#paper :hover {
+  opacity: 0.5;
+}
 
 #scissors :hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .score-board {
-    display: flex;
-    width: 500px;
-    gap: 40px;
-    flex-direction: row;
-    margin: 200px 0px 0px 570px;
-    font-size: 30px;
-    text-align: center;
-    
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 5%;
 }
 
 #username-dis {
-    text-align: center;
-    margin-top: 20px;
-    }
+  display: block;
+  width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 20px;
+  color: black !important;
+  background-color: rgba(255, 255, 255, 0.505);
+  border-radius: 10rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
 
 #results {
-    border: black 1px solid;
-    height: 40px;
-    width: 20%;
-    margin-left: 100px;
-    position: absolute;
-    left: 530px;
-    color: black;
-    text-align: center;
-    background-color: #00A6ED;
-    color: white;
-    border-radius: 20px;
-    padding-top: 15px;
-    margin-top: 20px;
+  text-align: center;
+  color: white;
+  background-color: #00a6ed;
+  border-radius: 20px;
+  padding: 1%;
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
-    h1 {
-       width: 1080px; 
-       font-size: 40px;
-    }
-
-    h2 {
-        margin-left: 450px;
-    }
-    .button-handler {
-        left: 40%;
-    }
-    .score-board {
-        margin-left: 50%;
-    }
-    #results {
-        margin-left: -70px;
-        margin-top: 50px;
-    }
-    #toggleMode {
-        left: 77%;
-        margin-top: 50px;
-    }
+@media screen and (max-width: 480px) {
+  .button-handler {
+    grid-template-columns: 1fr;
+    gap: 5%;
+    margin: 5% 30% 20%;
+  }
+  #username-dis {
+    width: 15rem;
+  }
 }
-
-@media screen and (max-width: 900px) and (min-width: 600px) {
-    h1 {
-        width: 960px; 
-        font-size: 40px;
-     }
- 
-     h2 {
-         margin-left: 20px;
-     }
-     .button-handler {
-         left: 20%;
-     }
-     .score-board {
-         margin-left: 25%;
-     }
-     #results {
-         margin-left: -170px;
-         margin-top: 50px;
-     }
-     #toggleMode {
-         left: 45%;
-         margin-top: 50px;
-     }
-}
-   
-
